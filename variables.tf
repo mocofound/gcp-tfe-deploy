@@ -32,6 +32,4 @@ variable "domain" {}
 
 variable "ssl_policy" {}
 
-variable "region" {}
-
-variable "project" {}
+variable "subnet" {}
