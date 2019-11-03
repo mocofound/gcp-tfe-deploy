@@ -36,7 +36,7 @@ module "tfe-beta" {
   postgresql_database = "${var.postgresql_database}
   postgresql_user     = "${var.postgresql_user}
   #Base64 encoded password
-  postgresql_password = "${var.postgresql_password"
+  postgresql_password = "${var.postgresql_password}"
 }
 
 output "tfe-beta" {
