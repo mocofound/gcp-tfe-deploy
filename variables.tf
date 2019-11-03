@@ -24,8 +24,6 @@ variable "postgresql_address" {}
 
 variable "dns_zone" {}
 
-variable "tfe-beta" {}
-
 variable "zone" {}
 
 variable "domain" {}
