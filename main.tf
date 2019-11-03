@@ -20,21 +20,21 @@ module "tfe-beta" {
   public_ip        = "${var.public_ip}"
   certificate      = "https://www.googleapis.com/compute/v1/project/terraform-test/global/sslCertificates/tfe"
   ssl_policy       = "${var.ssl_policy}"
-  subnet           = "${var.subnet}
+  subnet           = "${var.subnet}"
   frontend_dns     = "${var.frontend_dns}"
 
   primary_count   = "3"
   secondary_count = "2"
 
-  license_file = "${var.license_file}
+  license_file = "${var.license_file}"
   
   image_family = "${var.image_family}"
   #image_family = "rhel-7-v20190729"
 
   gcs_bucket          = "${var.gcs_bucket}"
   postgresql_address  = "${var.postgresql_address}"
-  postgresql_database = "${var.postgresql_database}
-  postgresql_user     = "${var.postgresql_user}
+  postgresql_database = "${var.postgresql_database}"
+  postgresql_user     = "${var.postgresql_user}"
   #Base64 encoded password
   postgresql_password = "${var.postgresql_password}"
 }
