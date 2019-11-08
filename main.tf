@@ -5,6 +5,7 @@ provider "google" {
 }
 
 provider "google-beta" {
+  credentials = "${var.creds}"
   region  = "${var.region}"
   project = "${var.project}"
 }
