@@ -9,7 +9,7 @@ provider "google-beta" {
 }
 
 module "tfe-beta" {
-  source           = "hashicorp/terraform-enterprise/google"
+  source  = "app.terraform.io/aharness-org/terraform-enterprise/google"
   #version          = "0.1.1"
   credentials_file = "${var.creds}"
   region           = "${var.region}"
