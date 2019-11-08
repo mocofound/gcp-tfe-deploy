@@ -8,7 +8,7 @@ provider "google-beta" {
   project = "${var.project}"
 }
 
-module "tfe-beta" {
+module "terraform-enterprise" {
   source            = "app.terraform.io/aharness-org/terraform-enterprise/google"
   version          = "0.1.1"
   credentials_file = "${var.creds}"
