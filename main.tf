@@ -1,4 +1,5 @@
 provider "google" {
+  credentials = "${var.creds}"
   region  = "${var.region}"
   project = "${var.project}"
 }
